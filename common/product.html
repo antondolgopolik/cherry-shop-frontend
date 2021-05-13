@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>Product</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/navigation-bar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/product.js"></script>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg">
-    <a href="home.html" class="navbar-logo"></a>
+    <a href="http://cherry-shop.com/home" class="navbar-logo"></a>
     <div class="collapse navbar-collapse navbar-list">
         <ul class="navbar-nav mt-auto mb-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">Basket</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="http://cherry-shop.com/products">Products</a>
             </li>
         </ul>
     </div>
@@ -26,16 +27,13 @@
 
 <div class="center-bar">
     <div class="left-col">
-        <label>Name: PS5: </label>
-        <br>
-        <label>Price: 599$</label>
-        <br>
-        <label>Number: 1234</label>
-        <br>
-        <input type="button" value="Add to basket">
+        <h5 id="name">Name: </h5>
+        <h5 id="price">Price: </h5>
+        <h5 id="number">Number: </h5>
+        <input type="button" value="Add to basket" class="btn-primary">
     </div>
     <div class="right-col">
-        <img src="../img/product_image.webp" alt="Cherry">
+        <img id="product-image" src="" alt="Product image">
     </div>
 </div>
 

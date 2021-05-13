@@ -17,10 +17,9 @@ function signUpButtonClick(event) {
             password: password,
         };
         // Запрос
-        $.ajax("http://api.cherry-shop.com/registration/signUp.php", {
+        $.ajax("http://api.cherry-shop.com/registration/signUp", {
             type: "POST",
             data: data,
-            dataType: "json",
             xhrFields: {
                 withCredentials: true
             }

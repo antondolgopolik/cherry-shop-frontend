@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $.getJSON("http://api.cherry-shop.com/products/getAll.php", function (data) {
-        $.each(data, function (i, product) {
-            $("#products-list").append("<li><a href='product.html'>" + product.product_name + "</a></li>");
+    $.getJSON("http://api.cherry-shop.com/products/getAll", function (products) {
+        $.each(products, function (i, product) {
+            $("#products-list").append("<li><a href='http://cherry-shop.com/products/" + product.id + "'>" + product.product_name + "</a></li>");
         })
     });
 });

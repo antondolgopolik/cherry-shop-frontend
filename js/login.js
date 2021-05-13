@@ -11,9 +11,8 @@ function logInButtonClick(event) {
         password: $("#password").val()
     };
     // Запрос
-    $.ajax("http://api.cherry-shop.com/login/logIn.php", {
+    $.ajax("http://api.cherry-shop.com/login/logIn", {
         data: data,
-        dataType: "json",
         xhrFields: {
             withCredentials: true
         }
